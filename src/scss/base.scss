@@ -1,0 +1,83 @@
+$gutter: .8%;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+.container {
+	margin: 0 auto;
+	min-width: 240px;
+	max-width: 280px;
+}
+.section {
+	clear: both;
+
+}
+.section:before,
+.section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.section {
+    zoom:1; /* For IE 6/7 */
+}
+.column {
+	width: 100%;
+	float: left;
+	margin: 1% $gutter 1% $gutter;
+	box-sizing: border-box;
+
+}
+
+@media only screen and ( min-width: 480px ) {
+	.container {
+		max-width:  560px;
+	}
+	.column {
+		width: (100% / 2) - ($gutter * 2);
+	}
+}
+@media only screen and ( min-width: 720px ) {
+	.container {
+		max-width: 880.32px;
+	}
+	.column {
+		width: (100% / 3) - ($gutter * 2);
+	}
+}
+@media only screen and ( min-width: 1200px ) {
+	.container {
+		max-width: 80%;
+	}
+	.column {
+		width: (100% / 4) - ($gutter * 2);
+	}
+}
+@media only screen and ( min-width: 1480px ) {
+	.column {
+		width: 18.4%;
+	}
+}
+@media only screen and ( min-width: 1800px ) {
+	.column {
+		width: (100% / 5) - ($gutter * 2);
+	}
+}
+@media only screen and ( min-width: 2100px ) {
+	.column {
+		width: (100% / 6) - ($gutter * 2);
+	}
+}
+@media only screen and ( min-width: 2450px ) {
+	.container {
+		max-width: 1960px;
+	}
+	.column {
+		width: (100% / 7) - ($gutter * 2);
+	}
+}
